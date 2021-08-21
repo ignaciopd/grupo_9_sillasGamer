@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+.top-nav{
+    width: 90%;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:60px;
+}
+
+.container-top-nav{
+    background-color: black;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+}
+
+.top-nav ul li { 
+    padding: 0px 10px;
+}
+
+.top-nav li a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-weight:500;
+}
+
+.search-bar{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+
+.logo {
+    width: 30%
+}
+
+.fa-shopping-cart{
+    color: white;
+    font-size: 15px;
+}
+
+
+.bottom-nav{
+    width: 90%;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+
+.bottom-nav li a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-weight:500;
+    
+}
+
+.bottom-nav {
+    display: flex;
+}
+.bottom-nav ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* BANNER */
+.carrousel-container { 
+    width: 100%;
+    height: 800px;
+    background: url('/img/the-best-gaming-chairs-for-2021_dr84.jpg') no-repeat center center/cover;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel-container h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+
+.carrousel-container p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 20px;
+    max-width: 80%;
+}
+
+.button-shop{
+    cursor: pointer;
+    display: inline-block;
+    border:0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 15%;
+    border-radius: 20px;
+    
+}
+
