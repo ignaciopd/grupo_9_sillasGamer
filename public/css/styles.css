@@ -19,7 +19,7 @@
     list-style: none;
     margin-left: 0;
     padding-left: 0;
-    display: flex;
+    display: none;
 }
 
 .top-nav ul li { 
@@ -33,29 +33,54 @@
     font-weight:500;
 }
 
+.nav-main{
+    display:flex;
+    justify-content:space-between;
+    width: 15%;
+    align-items: center;
+}
+
+.nav-main ul { 
+    display: none;
+}
+
+.burger-menu {
+    color: white;
+    font-size: 20px
+}
+
+
 .search-bar{
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
+    display: block;
+    width: 20%;
+}
+.fa-search{
+    color: white;
+    font-size: 15px;
 }
 
 .logo {
-    width: 30%
+    width: 190px;
 }
 
 .fa-shopping-cart{
     color: white;
     font-size: 15px;
+    
 }
 
 
 .bottom-nav{
     width: 90%;
     margin: 0 auto;
-    display:flex;
+    display:none;
     justify-content:space-between;
+    
 }
 
 .bottom-nav li a {
@@ -66,9 +91,6 @@
     
 }
 
-.bottom-nav {
-    display: flex;
-}
 .bottom-nav ul {
     list-style: none;
     margin-left: 0;
@@ -118,8 +140,37 @@
     font-size: 15px;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
-    width: 15%;
+    width: 30%;
     border-radius: 20px;
     
 }
 
+.button-shop:hover {
+    opacity: 0.5;
+}
+
+@media (min-width: 361px) { 
+    header{
+        
+    }
+
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media (min-width: 1200px) { 
+    .bottom-nav{
+        display: flex;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .nav-main ul { 
+        display: flex;
+    }
+
+}
