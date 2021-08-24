@@ -149,14 +149,54 @@
     opacity: 0.5;
 }
 
+footer {
+    background-color: black;
+    box-sizing: border-box;
+    display: block;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    height: 360px;
+}
+
+.fiscal,.redes,.reservados {
+    box-sizing: border-box;
+    color: gray;
+    position: relative;
+    text-align: center;
+    
+}
+footer h2{
+    color: white;
+    position: relative;
+    top: 18px;
+    
+}
+.redes p, .fiscal p {
+    position: relative;
+    left: 120px;
+}
+.redes i {
+    position: relative;
+}
+
+#icono-redes {
+    font-size: x-large;
+}
+
+
+
+
 @media (min-width: 361px) { 
-    header{
+    {
         
     }
 
 }
 
 @media (min-width: 768px) { 
+
 
 }
 
@@ -173,4 +213,18 @@
         display: flex;
     }
 
+    footer {
+        display: flex;
+        height: 150px;
+    }
+
+    .redes {
+        position: relative;
+        right: 160px;
+    }
+    
+    .fiscal {
+        position: relative;
+        right: 160px;
+    }
 }
