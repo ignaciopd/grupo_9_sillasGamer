@@ -185,19 +185,46 @@ footer h2{
     font-size: x-large;
 }
 
-.container-productDetail{
+.container-productTop{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
-    align-items:center;
     font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
 }
 
-.product-images{
-    border-style: solid;
-    justify-content:space-around;
-    align-items:center;
+.reviews {
+    color: darkorange;
 }
+.container-productDetail{
+    width: 60%;
+}
+.product-images{
+    border: 1px solid black;
+}
+
+.buybutton {
+    background-color: black;
+    color: white;
+    display:inline-block;
+    transition-duration: 0.4s;
+    border-radius: 0.1cm;
+
+}
+.buybutton:hover {
+        background-color: grey;
+        color: white;
+
+   
+  }
+.container-productBottom{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
 
 
 
