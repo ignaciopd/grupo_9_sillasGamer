@@ -20,8 +20,8 @@ app.get("/join-us", (req, res) => {
 app.get("/sign-in", (req, res) => {
     res.sendFile(path.join(__dirname, "./view/index.html"));
   });
-
-  app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "./view/index.html"));
+  
+app.get("/product-detail", (req, res) => {
+    res.sendFile(path.join(__dirname, "./view/productDetail.html"));
   });  
 app.listen(puerto, () => console.log(`escuchando en el puerto ${puerto}`));
