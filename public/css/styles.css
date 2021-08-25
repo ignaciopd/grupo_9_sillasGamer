@@ -185,6 +185,19 @@ footer h2{
     font-size: x-large;
 }
 
+.container-productDetail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.product-images{
+    border-style: solid;
+    justify-content:space-around;
+    align-items:center;
+}
 
 
 
