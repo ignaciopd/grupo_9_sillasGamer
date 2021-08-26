@@ -232,8 +232,16 @@ footer h2{
 /* CARRO DE COMPRAS */
 
 .shopping-cart{
-display: flex;
+    display: flex;
 }
+.product{
+    display: flex;
+}
+
+.totals{
+    display: flex;
+}
+
 .image-cart img{
 width: 150px;
 }
