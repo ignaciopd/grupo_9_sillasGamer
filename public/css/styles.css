@@ -185,6 +185,8 @@ footer h2{
     font-size: x-large;
 }
 
+/* PAGINA DE PRODUCTO */
+
 .container-productTop{
     display: flex;
     flex-wrap: wrap;
@@ -225,8 +227,16 @@ footer h2{
     align-items:center;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
+} 
 
+/* CARRO DE COMPRAS */
 
+.shopping-cart{
+display: flex;
+}
+.image-cart img{
+width: 150px;
+}
 
 @media (min-width: 361px) { 
     {
