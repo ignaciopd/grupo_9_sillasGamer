@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/535c09f339.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="/css/normalize.css">
+    <link  rel="stylesheet" href="/css/styles.css">
+    <title>Producto</title>
 </head>
+
+<header>
+    <div class="container-top-nav"> 
+        <nav class="top-nav">
+            <i class="fas fa-search"></i>
+            <img class="logo" src="./img/logo.png" alt="No se encontró la imágen">
+            <div class="nav-main"> 
+                <ul>
+                    <li><a class="sign-in" href="#"> Sign in</a></li>
+                    <li><a class="join-us" href="#"> Join us</a> </li>                    
+                </ul>
+                <div>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="burger-menu">
+                    <i class= "fas fa-bars"></i>
+                </div>
+            </div>    
+        </nav>
+    </div>
+    <div class="container-bottom-nav">
+        <nav class="bottom-nav">
+            <ul>
+                <li> <a class="about-us" href="#"> About us</a> </li>
+                <li> <a class="shop" href="#"> Shop</a> </li>
+                <li> <a class="home" href="#"> Home</a> </li>
+                <li> <a class="contact" href="#"> Contact us</a> </li>
+                <li> <a class="frequent-questions" href="#"> Q & A</a> </li>
+            </ul>
+        </nav>
+    </div>   
+
+</header>
+
 <body>
+    <h1>Carrito de compras</h1>
+
+    <div class="shopping-cart">
+       
+      <div class="product">
+        <div class="product-image">
+          <img src="./img/sillaEjemplo.png">
+        </div>
+        <div class="product-details">
+          <div class="product-title">THRONEGAME R1 RACE 2021</div>
+          <p class="product-description">La silla presenta un asiento ancho, respaldo alto y tonos de color personalizados en dos capas para ofrecerle el estilo, la comodidad y la resistencia que necesita para largas sesiones de juego.</p>
+        </div>
+        <div class="product-price">249.990</div>
+        <div class="product-quantity">
+          <input type="number" value="2" min="1">
+        </div>
+        <div class="product-removal">
+          <button class="remove-product">
+            Remover
+          </button>
+        </div>
+        <div class="product-line-price">25.98</div>
+      </div>
+      
+      <div class="totals">
+        <div class="totals-item">
+          <label>Subtotal</label>
+          <div class="totals-value" id="cart-subtotal">71.97</div>
+        </div>
+        <div class="totals-item">
+          <label>Impuestos (19%)</label>
+          <div class="totals-value" id="cart-tax">3.60</div>
+        </div>
+        <div class="totals-item">
+          <label>Envio</label>
+          <div class="totals-value" id="cart-shipping">15.00</div>
+        </div>
+        <div class="totals-item totals-item-total">
+          <label>Total</label>
+          <div class="totals-value" id="cart-total">90.57</div>
+        </div>
+      </div>
+          
+          <button class="checkout">Ir a pagar</button>
     
+    </div>   
 </body>
 </html>
