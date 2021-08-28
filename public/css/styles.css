@@ -9,10 +9,15 @@
     justify-content:space-between;
     align-items:center;
     height:60px;
+ 
 }
 
 .container-top-nav{
     background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
 }
 
 .top-nav ul {
@@ -20,6 +25,7 @@
     margin-left: 0;
     padding-left: 0;
     display: none;
+    margin-bottom: 0px;
 }
 
 .top-nav ul li { 
@@ -50,14 +56,14 @@
 }
 
 
-.search-bar{
+.button-shop{
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
     display: block;
-    width: 20%;
+    width: 150px;
 }
 .fa-search{
     color: white;
@@ -80,7 +86,13 @@
     margin: 0 auto;
     display:none;
     justify-content:space-between;
+    padding-top: 15px;
+    margin-top: 65px;
+    z-index: 50;
     
+}
+.bottom-nav li{
+    position: relative;
 }
 
 .bottom-nav li a {
@@ -88,7 +100,27 @@
     font-family: 'Josefin Sans', sans-serif;
     color: black;
     font-weight:500;
-    
+    padding: 0 10px;
+}
+
+.bottom-nav li a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height:3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.bottom-nav li a:hover{
+    color: #808080;
+}
+
+
+.bottom-nav li a:hover:after{
+    width: 100%;
 }
 
 .bottom-nav ul {
@@ -101,6 +133,7 @@
 }
 
 /* BANNER */
+
 .carrousel-container { 
     width: 100%;
     height: 800px;
@@ -113,26 +146,23 @@
 }
 
 .carrousel-container h2 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: white;
     font-size: 30px;
     margin: 0;
 }
 
-
 .carrousel-container p {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     max-width: 80%;
 }
 
 .button-shop{
     cursor: pointer;
-    display: inline-block;
-    border:0;
     font-weight: bold;
     padding: 10px 20px;
     background-color: white;
@@ -140,15 +170,71 @@
     font-size: 15px;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
-    width: 30%;
-    border-radius: 20px;
-    
+    border-radius: 0px
 }
 
 .button-shop:hover {
     opacity: 0.5;
 }
 
+/* MAIN HOME */
+
+.section-product {
+    width: 90%;
+    margin: auto;
+}
+
+.title-product{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.article-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #cccccc;
+    padding: 30px 0;
+    margin: 10px 0;
+}
+
+.article-product:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.article-product img {
+  width: 90%;
+} 
+
+.article-product h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 2px solid #000;
+    padding-bottom: 4px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.button-article {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px 20%;
+}
+
+.button-article:hover {
+    background-color: #ff3c78;
+    color: white;
+}
+
+/* FOOTER */ 
 footer {
     background-color: black;
     box-sizing: border-box;
@@ -185,7 +271,7 @@ footer h2{
     font-size: x-large;
 }
 
-/* PAGINA DE PRODUCTO */
+ /* PAGINA DE PRODUCTO */ 
 
 .container-productTop{
     display: flex;
@@ -246,14 +332,26 @@ footer h2{
 width: 150px;
 }
 
-@media (min-width: 361px) { 
-    {
-        
+@media (min-width: 360px) {
+    body{
+        position: relative;
+        margin-top: 60px;
     }
-
 }
 
 @media (min-width: 768px) { 
+    .title-product{
+        text-align: center;
+    }
+    .container-product{
+       display: flex;
+       justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+    .article-product{
+        width: 40vw;
+    }
 
 
 }
@@ -284,5 +382,9 @@ width: 150px;
     .fiscal {
         position: relative;
         right: 160px;
+    }
+
+    .article-product{
+        width: 20vw;
     }
 }
