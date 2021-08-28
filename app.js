@@ -14,7 +14,7 @@ app.get("/shopp-cart", (req, res) => {
   });
 
 app.get("/join-us", (req, res) => {
-    res.sendFile(path.join(__dirname, "./view/index.html"));
+    res.sendFile(path.join(__dirname, "./view/register.html"));
   });
 
 app.get("/sign-in", (req, res) => {

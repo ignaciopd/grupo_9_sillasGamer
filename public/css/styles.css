@@ -72,6 +72,7 @@
 
 .logo {
     width: 190px;
+   
 }
 
 .fa-shopping-cart{
@@ -250,13 +251,13 @@ footer {
     box-sizing: border-box;
     color: gray;
     position: relative;
-    text-align: center;
-    
+    text-align: center;  
 }
+
 footer h2{
     color: white;
     position: relative;
-    top: 18px;
+    top: 12px;
     
 }
 .redes p, .fiscal p {
@@ -359,6 +360,12 @@ width: 150px;
 @media (min-width: 1200px) { 
     .bottom-nav{
         display: flex;
+    }
+
+    .logo {
+        position: relative;
+        left: 120px;
+        width: 290px;
     }
 
     .burger-menu{
