@@ -236,6 +236,7 @@
 }
 
 /* FOOTER */ 
+
 footer {
     background-color: black;
     box-sizing: border-box;
@@ -244,7 +245,7 @@ footer {
     justify-content:space-around;
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
-    height: 360px;
+    height: 205px;
 }
 
 .fiscal,.redes,.reservados {
@@ -255,6 +256,7 @@ footer {
 }
 
 footer h2{
+    box-sizing: border-box;
     color: white;
     position: relative;
     top: 12px;
@@ -333,6 +335,55 @@ footer h2{
 width: 150px;
 }
 
+/* REGISTRO */
+
+body form {
+    position: relative;
+    top: 20px;
+
+}
+
+body form div {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-family:'Josefin Sans', sans-serif;
+    margin-top: 10px;
+}
+
+#paises, #cumpleaños {
+    width: 47%;
+}
+
+#enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:#23eb00;
+    border: none;
+    position: relative;
+    font-size: medium;
+    left: 110px;
+    width: 80px;
+    height: 20px;
+    font-style: italic;
+    
+}
+
+#registrado {
+    flex-wrap: wrap;
+    border-style: none;
+    background-color: white;
+    position: relative;
+    bottom: 29px;
+    left: 190px;
+    width: 60px;
+    font-size: x-small;
+    font-style: italic;
+}
+
+
 @media (min-width: 360px) {
     body{
         position: relative;
@@ -352,6 +403,38 @@ width: 150px;
     }
     .article-product{
         width: 40vw;
+    }
+
+    body form input {
+        display: flex;
+        box-sizing: border-box;
+        width: 40%;
+        height: 50px;
+        font-size: x-large;
+    }
+
+    #cumpleaños, #paises {
+        width: 40%;
+        height: 50px;
+        font-size: x-large;
+    }
+
+    #enviar {
+        position: relative;
+        top: 10px;
+        left: 700px;
+        height: 40px;
+        width: 290px;
+        margin-bottom: 236px;
+        font-size: x-large;
+    }
+
+    #registrado {
+        position: relative;
+        left: 1030px;
+        width: 200px;
+        bottom: 259px;
+        font-size: large;
     }
 
 
