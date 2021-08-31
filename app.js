@@ -18,7 +18,7 @@ app.get("/join-us", (req, res) => {
   });
 
 app.get("/sign-in", (req, res) => {
-    res.sendFile(path.join(__dirname, "./view/index.html"));
+    res.sendFile(path.join(__dirname, "./view/login.html"));
   });
   
 app.get("/product-detail", (req, res) => {

@@ -24,7 +24,7 @@ rel="stylesheet" />
             <img class="logo" src="./img/logo.png" alt="No se encontró la imágen">
             <div class="nav-main"> 
                 <ul>
-                    <li><a class="sign-in" href="#"> Sign in</a></li>
+                    <li><a class="sign-in" href="./sign-in"> Sign in</a></li>
                     <li><a class="join-us" href="./join-us"> Join us</a> </li>                    
                 </ul>
                 <div>
@@ -52,26 +52,26 @@ rel="stylesheet" />
 <body>
         <form action="none" method="GET">
 
-            <div>
+            <div class="containers-form">
                 <label for="nombre"></label>
                 <input type="text" name="nombre" placeholder="Nombre/s" id="nombre" required>
             </div>
     
-            <div>
+            <div class="containers-form">
                 <label for="apellido"></label>
                 <input type="text" name="apellido" placeholder="Apellido/s" required>
             </div>
     
-            <div>
+            <div class="containers-form">
                 <label name="cumpleaños"></label>
                 <input type="date" name="cumpleaños" id="cumpleaños" required>
             </div>
     
-            <div>
+            <div class="containers-form"> 
                 <label for="email"></label>
                 <input type="email" name="email" placeholder="E-mail" id="email" required>
             </div>
-            <div>
+            <div class="containers-form">
                 <label for="paises"></label>
                 <select name="pais" id="paises" required>
                     <option hidden selected>País</option>
@@ -324,12 +324,15 @@ rel="stylesheet" />
                  </select>
             </div>
         
-            <div>
+            <div class="containers-form">
                 <label for="password"></label>
                 <input type="password" name="contraseña" placeholder="Contraseña" id="contraseña" required>
             </div>
-            <button type="submit" id="enviar"> Enviar </button>
-            <button type="reset" id="registrado"> Ya estoy registrado </button>
+            
+            <div class="containers-form">
+                <button type="submit" id="enviar"> Enviar </button>
+                <button type="reset" id="registrado"> Ya estoy registrado </button>
+            </div>
         </form>
     
 </body>
