@@ -49,51 +49,86 @@ rel="stylesheet" />
 </header>
 
 <body>
-    <h1>Carrito de compras</h1>
 
-    <div class="shopping-cart">
-       
-      <div class="product">
-        <div class="image-cart">
-          <img src="./img/sillaEjemplo.png">
+  <div class="shop-cart">
+    <div class="order_summary">
+      <h1 class="cart-titles">Carrito de compras</h1>
+      <div class="summary_card">
+        <div class="cart_item">
+          <div class="product_img">
+            <img src="img/silla-home.png" alt="No se encontró la imágen"/>
+          </div>
+          <div class="product_info">
+            <h1 class="cart-titles">Silla Gamer</h1>
+            <p>Lorem Ipsum is simply dummy text.</p>
+            <div class="close-btn">
+              <i class="fa fa-close"></i>
+            </div>
+            <div class="product_rate_info">
+              <h1 class="cart-titles">$ 249.990</h1>
+              <span class="pqt-minus">-</span>
+              <span class="pqt">1</span>
+              <span class="pqt-plus">+</span>
+            </div>
+          </div>
         </div>
-        <div class="product-details">
-          <div class="product-title">THRONEGAME R1 RACE 2021</div>
-          <p class="product-description">La silla presenta un asiento ancho, respaldo alto y tonos de color personalizados en dos capas para ofrecerle el estilo, la comodidad y la resistencia que necesita para largas sesiones de juego.</p>
+        <div class="cart_item">
+          <div class="product_img">
+            <img src="img/mouse-home.png" alt="No se encontró la imágen"/>
+          </div>
+          <div class="product_info">
+            <h1 class="cart-titles">Mouse Gamer</h1>
+            <p>Lorem Ipsum is simply dummy text.</p>
+            <div class="close-btn">
+              <i class="fa fa-close"></i>
+            </div>
+            <div class="product_rate_info">
+              <h1 class="cart-titles">$ 16.990</h1>
+              <span class="pqt-minus">-</span>
+              <span class="pqt">1</span>
+              <span class="pqt-plus">+</span>
+            </div>
+          </div>
         </div>
-        <div class="product-price">249.990</div>
-        <div class="product-quantity">
-          <input type="number" value="2" min="1">
+        <hr />
+        <div class="order_price">
+          <p>Subtotal</p>
+          <h4>$266.980</h4>
         </div>
-        <div class="product-removal">
-          <button class="remove-product">
-            Remover
-          </button>
+        <div class="order_service">
+          <p>Envíos</p>
+          <h4>$9.990</h4>
         </div>
-        <div class="product-line-price">25.98</div>
+        <div class="order_total">
+          <p>Total</p>
+          <h4>$276.970</h4>
+        </div>
       </div>
-      
-      <div class="totals">
-        <div class="totals-item">
-          <label>Subtotal</label>
-          <div class="totals-value" id="cart-subtotal">71.97</div>
+    </div>
+    <div class="payment_details">
+      <h1 class="cart-titles">Información de contacto</h1>
+      <div class="details_card">
+        <div class="name_address">
+          <div class="first_lastName">
+            <input type="text" placeholder="Nombre" />
+            <input type="text" placeholder="Apellido" />
+            <input type="text" placeholder="Telefono" />
+          </div>
         </div>
-        <div class="totals-item">
-          <label>Impuestos (19%)</label>
-          <div class="totals-value" id="cart-tax">3.60</div>
+        <h1 class="cart-titles">Dirección de envío</h1>
+        <div class="shipping_card">
+          <div class="address">
+            <input type="text" placeholder="Dirección" />
+            <input type="number" placeholder="Número" />
+            <input type="text" placeholder="Pais" />
+          </div>
         </div>
-        <div class="totals-item">
-          <label>Envio</label>
-          <div class="totals-value" id="cart-shipping">15.00</div>
-        </div>
-        <div class="totals-item totals-item-total">
-          <label>Total</label>
-          <div class="totals-value" id="cart-total">90.57</div>
+        <div class="proced_payment">
+          <a href="">Pagar</a>
         </div>
       </div>
-          
-          <button class="checkout">Ir a pagar</button>
-    
-    </div>   
+    </div>
+  </div>
+
 </body>
 </html>
