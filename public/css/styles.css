@@ -286,13 +286,18 @@ footer h2{
     justify-content:space-around;
     align-items: center;
     padding: 20px;
+    margin: 10px;
 }
 
 .reviews {
     color: darkorange;
 }
 .container-productDetail{
-    width: 60%;
+    width: 50%;
+}
+
+.container-productDetail h3{
+margin: 20px;
 }
 .product-images{
     border: 1px solid black;
@@ -313,12 +318,13 @@ footer h2{
    
   }
 .container-productBottom{
+    margin: 20px;
     display: flex;
-    justify-content:center;
-    align-items:center;
+    text-align:justify;
     font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
+    align-items: center;
 } 
+
 
 /* CARRO DE COMPRAS */
 
