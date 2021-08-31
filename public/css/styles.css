@@ -244,8 +244,10 @@ footer {
     flex-wrap: wrap;
     justify-content:space-around;
     font-family: 'Josefin Sans', sans-serif;
-    position: relative;
+    position: fixed;
     height: 205px;
+    bottom: 0;
+    width: 100%;
 }
 
 .fiscal,.redes,.reservados {
@@ -343,7 +345,7 @@ body form {
 
 }
 
-body form div {
+.containers-form {
     display: flex;
     justify-content: center;
     margin: 5px;
@@ -383,6 +385,73 @@ body form div {
     font-style: italic;
 }
 
+/* Login */
+
+.form-login{
+    width: 80%;
+    margin: auto;
+    border: 1px solid gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.form-login h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.control-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+}
+
+.control-form a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: grey;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.control-form input{ 
+    padding: 5px 5px;
+    border: 2px solid black;
+}
+
+.control-form button{
+    width: 45%;
+    text-decoration: none;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    padding: 8px 5px;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.control-form button:hover {
+    background-color: #ff3c78;
+    color: white;
+}
+
+.buttom-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
 
 @media (min-width: 360px) {
     body{
@@ -405,7 +474,7 @@ body form div {
         width: 40vw;
     }
 
-    body form input {
+    .containers-form {
         display: flex;
         box-sizing: border-box;
         width: 40%;
@@ -477,4 +546,7 @@ body form div {
     .article-product{
         width: 20vw;
     }
+
+    .form-login{
+        max-width: 50vw;
 }

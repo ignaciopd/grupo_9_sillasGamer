@@ -10,9 +10,11 @@ rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link  rel="stylesheet" href="/css/normalize.css">
     <link  rel="stylesheet" href="/css/styles.css">
-    <title>Producto</title>
+    <title> login </title>
 </head>
 
 <header>
@@ -39,39 +41,48 @@ rel="stylesheet" />
             <ul>
                 <li> <a class="about-us" href="#"> About us</a> </li>
                 <li> <a class="shop" href="#"> Shop</a> </li>
-                <li> <a class="home" href="#"> Home</a> </li>
+                <li> <a class="home" href="./"> Home</a> </li>
                 <li> <a class="contact" href="#"> Contact us</a> </li>
                 <li> <a class="frequent-questions" href="#"> Q & A</a> </li>
             </ul>
         </nav>
-    </div>   
-
+    </div>     
 </header>
 
 <body>
-    
-    <div class="container-productTop">
-        <img class="product-images" src="./img/sillaEjemplo.png" alt="No se encontró la imágen"> 
-        <div class="container-productDetail">
-         <h1>THRONEGAME R1 RACE 2021</h1>
-         <span class="fa fa-star reviews"></span>
-         <span class="fa fa-star reviews"></span>
-         <span class="fa fa-star reviews"></span>
-         <span class="fa fa-star reviews"></span>
-         <span class="fa fa-star"></span>
-         <h3>La silla presenta un asiento ancho, respaldo alto y tonos de color personalizados en dos capas para ofrecerle el estilo, la comodidad y la resistencia que necesita para largas sesiones de juego.</h3>
-         <h2>$249.990</h2>
-         <div class="buybutton">
-             <h2>Agregar al carrito</h2>
-        </div>
-    </div>
 
-    <div class="container-productBottom">
-        <div class="container-productDescription">
-        <h1>Especificaciones Técnicas</h1>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, velit laborum nemo porro veritatis pariatur aliquam sapiente ut, atque possimus nobis voluptatibus facere itaque repellat, amet iusto eum commodi id?</h3>
+    <form action="none" method="GET" class="form-login">
+        <h3>SIGN IN</h3>
+        <div class="control-form">
+            <input type="text" name="usuario" placeholder="Usuario" id="usuario" required>
         </div>
-    </div>
 
+        <div class="control-form">
+            <input type="password" name="contraseña" placeholder="Contraseña" id="contraseña" required>
+            <a class="Olvido" href="#">Olvidaste tu contraseña?</a>
+        </div>
+        <div class="control-form buttom-login">
+            <button type="submit" id="ingresar"> ingresar </button>
+            <a class="hola" href="./join-us"> Todavia no te registraste?</a>
+        </div>
+    </form>   
 </body>
+
+<footer>
+    <div class="reservados">
+        <h2>Derechos reservados</h2>
+        <p> Este es un texto de ejemplo de los
+             derechos reservados de la página </p>
+    </div> 
+    <div class="redes">
+        <h2>Redes</h2>
+        
+        <i class="fab fa-twitter" id="icono-redes"></i>
+        <i class="fab fa-facebook-f" id="icono-redes"></i>
+        <i class="fab fa-instagram" id="icono-redes"></i>
+    </div>
+    <div class="fiscal">
+        <h2>Registro fiscal</h2>
+    </div>   
+</footer>
 </html>
