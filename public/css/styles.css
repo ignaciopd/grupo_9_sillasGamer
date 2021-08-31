@@ -239,15 +239,13 @@
 
 footer {
     background-color: black;
-    box-sizing: border-box;
-    display: block;
     flex-wrap: wrap;
     justify-content:space-around;
     font-family: 'Josefin Sans', sans-serif;
-    position: fixed;
     height: 205px;
-    bottom: 0;
     width: 100%;
+    align-self: flex-end;
+    position: relative;
 }
 
 .fiscal,.redes,.reservados {
@@ -339,18 +337,28 @@ width: 150px;
 
 /* REGISTRO */
 
-body form {
+.form-register {
     position: relative;
     top: 20px;
-
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px 10px;
+    margin: auto;
 }
 
 .containers-form {
     display: flex;
-    justify-content: center;
-    margin: 5px;
-    font-family:'Josefin Sans', sans-serif;
-    margin-top: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+    
+}
+
+.containers-form input, .containers-form select{ 
+    padding: 5px 5px;
+    border: 2px solid black;
+    font-size: 15px;
+    font-family:'Montserrat', sans-serif;
 }
 
 #paises, #cumpleaños {
@@ -358,39 +366,35 @@ body form {
 }
 
 #enviar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 45%;
+    text-decoration: none;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
     color: white;
-    background-color:#23eb00;
+    padding: 8px 5px;
     border: none;
-    position: relative;
-    font-size: medium;
-    left: 110px;
-    width: 80px;
-    height: 20px;
-    font-style: italic;
-    
+    letter-spacing: 1px;
+    font-size: 0.7em
 }
 
+#enviar:hover{
+    background-color: #ff3c78;
+    color: white;
+}
 #registrado {
-    flex-wrap: wrap;
     border-style: none;
     background-color: white;
-    position: relative;
-    bottom: 29px;
-    left: 190px;
-    width: 60px;
-    font-size: x-small;
     font-style: italic;
+    font-size:0.7em;
 }
 
 /* Login */
 
 .form-login{
-    width: 80%;
+    width: 90%;
     margin: auto;
-    border: 1px solid gray;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
@@ -415,7 +419,7 @@ body form {
 .control-form a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     color: grey;
     cursor: pointer;
     margin-top: 10px;
@@ -424,6 +428,7 @@ body form {
 .control-form input{ 
     padding: 5px 5px;
     border: 2px solid black;
+    font-size: 15px;
 }
 
 .control-form button{
@@ -450,6 +455,10 @@ body form {
     justify-content: space-between;
 }
 
+form {
+    min-height: calc(100vh - 60px - 205px);
+}
+
 
 
 
@@ -458,6 +467,8 @@ body form {
         position: relative;
         margin-top: 60px;
     }
+
+   
 }
 
 @media (min-width: 768px) { 
@@ -476,37 +487,16 @@ body form {
 
     .containers-form {
         display: flex;
-        box-sizing: border-box;
-        width: 40%;
         height: 50px;
         font-size: x-large;
     }
-
-    #cumpleaños, #paises {
-        width: 40%;
-        height: 50px;
-        font-size: x-large;
+    .form-register{
+        max-width: 70vw;
     }
-
-    #enviar {
-        position: relative;
-        top: 10px;
-        left: 700px;
-        height: 40px;
-        width: 290px;
-        margin-bottom: 236px;
-        font-size: x-large;
-    }
-
-    #registrado {
-        position: relative;
-        left: 1030px;
-        width: 200px;
-        bottom: 259px;
-        font-size: large;
-    }
-
-
+    .form-login{
+        max-width: 70vw;
+    } 
+    
 }
 
 @media (min-width: 1200px) { 
@@ -547,6 +537,12 @@ body form {
         width: 20vw;
     }
 
+    .form-register{
+        max-width: 50vw;
+        margin-bottom: 50px
+    }
     .form-login{
         max-width: 50vw;
+    }
+
 }

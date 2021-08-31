@@ -50,29 +50,25 @@ rel="stylesheet" />
 </header>
 
 <body>
-        <form action="none" method="GET">
+        <form action="none" method="GET" class="form-register">
 
+            <h3>REGISTER</h3>
             <div class="containers-form">
-                <label for="nombre"></label>
                 <input type="text" name="nombre" placeholder="Nombre/s" id="nombre" required>
             </div>
     
             <div class="containers-form">
-                <label for="apellido"></label>
                 <input type="text" name="apellido" placeholder="Apellido/s" required>
             </div>
     
             <div class="containers-form">
-                <label name="cumpleaños"></label>
                 <input type="date" name="cumpleaños" id="cumpleaños" required>
             </div>
     
             <div class="containers-form"> 
-                <label for="email"></label>
                 <input type="email" name="email" placeholder="E-mail" id="email" required>
             </div>
             <div class="containers-form">
-                <label for="paises"></label>
                 <select name="pais" id="paises" required>
                     <option hidden selected>País</option>
                     <option value="Afganistan">Afghanistan</option>
@@ -329,7 +325,7 @@ rel="stylesheet" />
                 <input type="password" name="contraseña" placeholder="Contraseña" id="contraseña" required>
             </div>
             
-            <div class="containers-form">
+            <div class="containers-form buttom-login">
                 <button type="submit" id="enviar"> Enviar </button>
                 <button type="reset" id="registrado"> Ya estoy registrado </button>
             </div>
