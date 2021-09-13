@@ -1,26 +1,16 @@
 const express = require("express")
 const router= express.Router()
-const path = require("path");
+const controller = require("../controller/mainController")
 
-router.get ("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../views/index.html"));
-  });
+router.get ("/", controller.home);
 
-router.get("/shopp-cart", (req, res) => {
-    res.sendFile(path.join(__dirname, "../views/index.html"));
-  });  
+router.get("/shopp-cart", controller.shoppCart);  
 
-router.get("/join-us", (req, res) => {
-    res.sendFile(path.join(__dirname, "../views/register.html"));
-  });
+router.get("/join-us", controller.joinUs);
 
-router.get("/sign-in", (req, res) => {
-    res.sendFile(path.join(__dirname, "../views/login.html"));
-  });
+router.get("/sign-in", controller.signIn);
   
-router.get("/product-detail", (req, res) => {
-    res.sendFile(path.join(__dirname, "../views/productDetail.html"));
-  });
+
 router.get("/cart", (req, res) => {
     res.sendFile(path.join(__dirname, "../views/cart.html"));
   });    
