@@ -1,0 +1,52 @@
+<%- include('./partials/head.ejs') %>
+
+<%- include('./partials/header.ejs') %>
+
+<body>
+    <form action="createProduct" method="GET">
+        <label for="create-or-mod">
+            <input type="radio" name="create-or-mod" value="Crear producto">Crear producto
+            <input type="radio" name="create-or-mod" value="Modificar producto">Modificar producto
+        </label>
+
+
+        <label for="name-product" class="name-product">
+         <input type="text" name="name-product">
+        </label>
+
+        <label for="description-product" class="description-product">
+        <textarea name="description-product"></textarea>
+        </label>
+
+        <label for="img-product" class="img-product">
+        <input type="file" accept=".jpg,.png" name="img-product">
+        </label>
+
+        <label for="category-product" class="category-product">
+            <select type="" name="category-product">
+                <option value="mouse">Mouse</option>
+                <option value="teclado">Teclado</option>
+                <option value="silla">Silla</option>
+                <option value="auriculares">Auricular</option>
+            </select>
+        </label>
+
+        <label for="color-product">
+            <select name="color-product">
+                <option value="blanco">Blanco</option> 
+                <option value="negro">Negro</option>
+                <option value="azul">Azul</option>
+                <option value="rojo">Rojo</option>
+            </select>
+        </label>
+
+        <label for="price-product">
+        <input type="number" name="price-product">$
+        </label>
+
+    </form>
+</body>
+
+<%- include('./partials/footer.ejs') %>
+
+</html>

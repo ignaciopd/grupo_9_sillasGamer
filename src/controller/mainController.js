@@ -18,6 +18,9 @@ const controller = {
     products: (req, res) => {
         res.render("productDetail.ejs");
     },
+    createProduct: (req,res) => {
+        res.render("createProduct.ejs")
+    }
 
 }
 
