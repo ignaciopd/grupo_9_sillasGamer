@@ -1,15 +1,15 @@
 {
   "name": "grupo_9_sillasgamer",
   "version": "1.0.0",
-  "description": "Breve descripción: E-commerce dedicado a la venta de sillas gamers.\r Público objetivo: Enfocado a gamers, streamers y programadores. A todo aquel que quiera lo máximo en comodidad para largas jornadas de juego o desarrollo frente al ordenador.",
+  "description": "E-commerce dedicado a la venta de sillas gamers.\r Público objetivo: Enfocado a gamers, streamers y programadores. A todo aquel que quiera lo máximo en comodidad para largas jornadas de juego o desarrollo frente al ordenador.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app"
+    "start": "nodemon src/index"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ignaciopd/grupo_9_sillasGamer.git"
+    "url": "https://github.com/ignaciopd/grupo_9_sillasGamer.git"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +20,7 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "nodemon": "^2.0.12",
     "normalize.css": "^8.0.1"
   }
 }
