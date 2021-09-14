@@ -25,3 +25,23 @@ https://www.razer.com/ca-en/lifestyle/gaming-chairs/ : Nos gustó el diseño gr�
 https://www.racinggames.cl/ : Interesante el logeo y la simpleza del diseño. 
 
 https://www.corsair.com/us/en/Categories/Products/Gaming-Chairs/c/Cor_Products_Gaming_Chairs : Nos gusto la opción de filtrar los productos por tamaño, color y marca. 
+
+
+# FeedBack Sprint 1
+Impresionante trabajo (10/10)
+
+
+
+# FeedBack Sprint 2
+Antes de nada quiero nuevamente felicitarlos por su trabajo en equipo y organizacion 
+son un destello grande de futuros profesionales de desarrollo web y estoy orgulloso de estar guiandoles, sin embargo tengo unas propuestas de mejora
+
+- en la ruta ``http://localhost:3000/join-us `` el select con nombre pais no conserva el mismo estilo que los demas input.
+
+- Seria perfecto si cuando le damos click al titulo de la pagina nos llevara a la home.
+
+- La ruta http://localhost:3000/shopp-cart, el footer no esta al fondo y esta clavado a la mitad 
+
+
+### Calificacion 
+Estoy impresionado con su trabajo ( 9/10 )
