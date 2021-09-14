@@ -1,9 +1,10 @@
 const path = require("path");
 
 const controller = {
-    products: (req, res) => {
-        res.sendFile(path.join(__dirname, "../views/productDetail.html"));
-      },
+  products: (req, res) => {
+    res.render("productDetail.ejs");
+},
+    
 }
 
 module.exports = controller

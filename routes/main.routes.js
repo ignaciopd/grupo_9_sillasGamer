@@ -11,9 +11,4 @@ router.get("/join-us", controller.joinUs);
 router.get("/sign-in", controller.signIn);
   
 
-router.get("/cart", (req, res) => {
-    res.sendFile(path.join(__dirname, "../views/cart.html"));
-  });    
-
-
 module.exports = router

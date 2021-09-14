@@ -1,52 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/535c09f339.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link  rel="stylesheet" href="/css/normalize.css">
-    <link  rel="stylesheet" href="/css/styles.css">
-    <title>Carro de compra</title>
-</head>
+<%- include('./partials/head.ejs') %>
 
-<header>
-    <div class="container-top-nav"> 
-        <nav class="top-nav">
-            <i class="fas fa-search"></i>
-            <img class="logo" src="./img/logo.png" alt="No se encontró la imágen">
-            <div class="nav-main"> 
-                <ul>
-                    <li><a class="sign-in" href="./sign-in"> Sign in</a></li>
-                    <li><a class="join-us" href="./join-us"> Join us</a> </li>                    
-                </ul>
-                <div>
-                  <a class="join-us" href="/cart"><i class="fas fa-shopping-cart"></i></a>
-                </div>
-                <div class="burger-menu">
-                    <i class= "fas fa-bars"></i>
-                </div>
-            </div>    
-        </nav>
-    </div>
-    <div class="container-bottom-nav">
-        <nav class="bottom-nav">
-            <ul>
-                <li> <a class="about-us" href="#"> About us</a> </li>
-                <li> <a class="shop" href="/product-detail"> Shop</a> </li>
-                <li> <a class="home" href="/"> Home</a> </li>
-                <li> <a class="contact" href="#"> Contact us</a> </li>
-                <li> <a class="frequent-questions" href="#"> Q & A</a> </li>
-            </ul>
-        </nav>
-    </div>   
-
-</header>
+<%- include('./partials/header.ejs') %>
 
 <body>
 
@@ -129,6 +83,8 @@ rel="stylesheet" />
       </div>
     </div>
   </div>
-
 </body>
+
+<%- include('./partials/footer.ejs') %>
+
 </html>
