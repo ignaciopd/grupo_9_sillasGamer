@@ -1,7 +1,7 @@
 Breve descripción: E-commerce dedicado a la venta de sillas gamers.
 Público objetivo: Enfocado a gamers, streamers y programadores. A todo aquel que quiera lo máximo en comodidad para largas jornadas de juego o desarrollo frente al ordenador.
 
-Enlace al tablero de Asana: https://app.asana.com/0/1200829258729989/1200829258729989
+Enlace al tablero de Jira: https://grupo9sillasgamer.atlassian.net/jira/software/projects/G9SG/boards/1/roadmap?shared=&atlOrigin=eyJpIjoiNGYyNGY3NzA0YjY5NGViODlhZjM4NTJhYTJhZmJlYzEiLCJwIjoiaiJ9
 
 Descripción del Equipo: 
 - Diego: 28 años, Ingeniero Comercial, chileno, apasionado por las motos. 
