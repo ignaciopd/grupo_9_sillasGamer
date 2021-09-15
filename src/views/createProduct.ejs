@@ -3,47 +3,58 @@
 <%- include('./partials/header.ejs') %>
 
 <body>
-    <form action="createProduct" method="GET">
-        <label for="create-or-mod">
-            <input type="radio" name="create-or-mod" value="Crear producto">Crear producto
-            <input type="radio" name="create-or-mod" value="Modificar producto">Modificar producto
-        </label>
+    <form action="createProduct" method="GET" class="conteinerCreateProduct">
 
+        <div class="conteiner-crear">
+            <h3>Crear o Modificar?</h3>
+            <input type="radio" name="create-or-mod" value="Crear producto" id="CrearProducto">
+            <label for="CrearProducto">Crear Producto</label>
 
-        <label for="name-product" class="name-product">
-         <input type="text" name="name-product">
-        </label>
+            <input type="radio" name="create-or-mod" value="Modificar producto" id="Modificar producto">
+            <label for="Modificar producto">Modificar producto</label>
+        </div>
 
-        <label for="description-product" class="description-product">
-        <textarea name="description-product"></textarea>
-        </label>
+        <div class="conteiner-form"> 
+         <input type="text" name="name-product" placeholder="Nombre del Producto" class="input-form">
+        </div>
 
-        <label for="img-product" class="img-product">
-        <input type="file" accept=".jpg,.png" name="img-product">
-        </label>
+        <div class="conteiner-form"> 
+        <textarea name="description-product" placeholder="Descripcion de Producto" class="input-form"></textarea>
+        </div>    
 
-        <label for="category-product" class="category-product">
-            <select type="" name="category-product">
+        <div class="conteiner-form"> 
+        <label> Selecciona un imagen </label>  
+        <input type="file" accept=".jpg,.png" name="img-product" Class="file-img">
+        </div> 
+
+        <div class="conteiner-form"> 
+            <label> Selecciona el tipo de Prodcuto</label>  
+            <select type="" name="category-product" class="input-form">
                 <option value="mouse">Mouse</option>
                 <option value="teclado">Teclado</option>
                 <option value="silla">Silla</option>
                 <option value="auriculares">Auricular</option>
             </select>
-        </label>
+        </div>
 
-        <label for="color-product">
-            <select name="color-product">
+        <div class="conteiner-form"> 
+            <label>Selecciona un color</label>  
+            <select name="color-product" class="input-form">
                 <option value="blanco">Blanco</option> 
                 <option value="negro">Negro</option>
                 <option value="azul">Azul</option>
                 <option value="rojo">Rojo</option>
             </select>
-        </label>
+        </div>
 
-        <label for="price-product">
-        <input type="number" name="price-product">$
-        </label>
+        <div class="conteiner-form"> 
+            <label>Valor en Pesos</label>   
+            <input type="number" name="price-product" placeholder="$" class="input-form">
+        </div>
 
+        <div class="containers-form buttom-login">
+            <button type="submit" id="enviar"> Crear</button>
+        </div>
     </form>
 </body>
 
