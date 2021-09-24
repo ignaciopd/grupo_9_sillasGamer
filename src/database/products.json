@@ -1,102 +1,101 @@
 [
     {
-        "id":1,
-        "category":"Sillas",
+        "id": 1,
+        "category": "Sillas",
         "name": "Silla Gamer Basic",
         "description": "Despreocupate de tu comodidad a la hora de jugar. Nuestra silla gamer Basic cuenta con cueros de primera calidad, ademas de poseer una estructura de lo más resistente hecha de fibras de carbono y hierro",
-        "color":"Red",
+        "color": "Red",
         "price": 29990,
-        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/007_ffba453d-602a-4a9f-97e1-96b2be683e14.progressive.jpg?v=1627565691"
+        "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/007_ffba453d-602a-4a9f-97e1-96b2be683e14.progressive.jpg?v=1627565691"
     },
     {
-        "id":2,
-        "category":"Sillas",
+        "id": 2,
+        "category": "Sillas",
         "name": "Silla Gamer Newbie",
-        "description":"La silla Newbie es tu puerta de entrada al mundo gamer. Cuenta con materiales de primera calidad asegurando horas de juego con máxima comodidad",
-        "color":"Blue",
+        "description": "La silla Newbie es tu puerta de entrada al mundo gamer. Cuenta con materiales de primera calidad asegurando horas de juego con máxima comodidad",
+        "color": "Blue",
         "price": 19990,
-        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/silla-donna-gamer-5029-foto6.progressive.jpg?v=1606855940"
+        "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/silla-donna-gamer-5029-foto6.progressive.jpg?v=1606855940"
     },
     {
-        "id":3,
-        "category":"Sillas",
+        "id": 3,
+        "category": "Sillas",
         "name": "Silla Gamer Space",
         "description": "Siéntete como en el espacio con nuestra silla Space. Diseño exclusivo y patentado por Thronegame",
-        "color":"Yellow",
+        "color": "Yellow",
         "price": 39990,
-        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/006_ef6e2cdd-3d6d-4413-98fa-96a1e12780a8.progressive.jpg?v=1605101523"
+        "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/006_ef6e2cdd-3d6d-4413-98fa-96a1e12780a8.progressive.jpg?v=1605101523"
     },
     {
-        "id":4,
-        "category":"Sillas",
+        "id": 4,
+        "category": "Sillas",
         "name": "Silla Gamer Pro",
         "description": "Sentirás que estas sentado en el auto deportivo más exclusivo del mundo. La silla gamer Pro tiene materiales usados en los mejores equipos de Formula 1",
-        "color":"White",
+        "color": "White",
         "price": 69990,
-        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/001_f30c5dcc-8afa-47ce-9e1b-9ccb2ced5e6f.progressive.jpg?v=1610294651"
+        "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/001_f30c5dcc-8afa-47ce-9e1b-9ccb2ced5e6f.progressive.jpg?v=1610294651"
     },
     {
-        "id":5,
-        "category":"Mouse",
+        "id": 5,
+        "category": "Mouse",
         "name": "Mouse Gamer 12000dpi RGB Pro",
-        "description":"Super cómodo y listo para todos tus desafíos. El Mouse cuenta con 7 botones que podrás programar a tu medida. Su iluminación RGB es personalizable y cambia a medida que seleccionas tu DPI de hasta 12000",
-        "color":"Black",
+        "description": "Super cómodo y listo para todos tus desafíos. El Mouse cuenta con 7 botones que podrás programar a tu medida. Su iluminación RGB es personalizable y cambia a medida que seleccionas tu DPI de hasta 12000",
+        "color": "Black",
         "price": 9990,
-        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/MG700TRIGGER_4.progressive.jpg?v=1612464159"
+        "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/MG700TRIGGER_4.progressive.jpg?v=1612464159"
     },
     {
-        "id":6,
-        "category":"Mouse",
+        "id": 6,
+        "category": "Mouse",
         "name": "Mouse Gamer 4000dpi RGB Light",
-        "description":"El mouse es verdaderamente ergonómico. Presione la tecla de francotirador cuando el sensor corte la resolución transitoria de 400 DPI",
-        "color":"Black",
+        "description": "El mouse es verdaderamente ergonómico. Presione la tecla de francotirador cuando el sensor corte la resolución transitoria de 400 DPI",
+        "color": "Black",
         "price": 6990,
-        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/MG100GEAR_4.progressive.jpg?v=1612464107"
+        "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/MG100GEAR_4.progressive.jpg?v=1612464107"
     },
     {
-        "id":7,
-        "category":"Teclados",
+        "id": 7,
+        "category": "Teclados",
         "name": "Teclado Gamer RGB Bullet",
-        "description":"¡Transforma tu experiencia de juego! El teclado gamer Bullet es el aliado perfecto para tener una mejor experiencia de juego en todas tus partidas. Con una alta velocidad de transferencia y un estilo RGB a la altura de tu talento",
-        "color":"Black",
+        "description": "¡Transforma tu experiencia de juego! El teclado gamer Bullet es el aliado perfecto para tener una mejor experiencia de juego en todas tus partidas. Con una alta velocidad de transferencia y un estilo RGB a la altura de tu talento",
+        "color": "Black",
         "price": 9990,
-        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/NK200_STK_001_c5b49e70-266c-4a2b-bc9c-a54f2cf128e3.progressive.jpg?v=1610480101"
+        "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/NK200_STK_001_c5b49e70-266c-4a2b-bc9c-a54f2cf128e3.progressive.jpg?v=1610480101"
     },
     {
-        "id":8,
-        "category":"Teclados",
+        "id": 8,
+        "category": "Teclados",
         "name": "Teclado Gamer Mecánico RGB Pro",
-        "description":"Prepárate para cada batalla con las mejores herramientas. El Teclado mecánico RGB Pro te brindará todo lo que necesitas para hacerte con la victoria. Mejores tiempos de respuesta en cada tecla, ademas cuenta con 9 efectos de iluminación RGB para personalizar el espacio de juego.",
-        "color":"Black",
+        "description": "Prepárate para cada batalla con las mejores herramientas. El Teclado mecánico RGB Pro te brindará todo lo que necesitas para hacerte con la victoria. Mejores tiempos de respuesta en cada tecla, ademas cuenta con 9 efectos de iluminación RGB para personalizar el espacio de juego.",
+        "color": "Black",
         "price": 14990,
-        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/NMK500_IMP_006.progressive.jpg?v=1627676396"
+        "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/NMK500_IMP_006.progressive.jpg?v=1627676396"
     },
     {
-        "id":9,
-        "category":"Teclados",
+        "id": 9,
+        "category": "Teclados",
         "name": "Teclado Gamer Mecánico RBG One Hand",
-        "description":"Mantente enfocado, precisión y comodidad es lo que podrás encontrar en el teclado gamer RBG One Hand. Con 27 teclas este teclado de una mano te brindara una excelente experiencia de juego. ¡Domina la batalla en máxima comodidad!",
-        "color":"Black",
+        "description": "Mantente enfocado, precisión y comodidad es lo que podrás encontrar en el teclado gamer RBG One Hand. Con 27 teclas este teclado de una mano te brindara una excelente experiencia de juego. ¡Domina la batalla en máxima comodidad!",
+        "color": "Black",
         "price": 11990,
-        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/001_1_90640a8d-84b4-4ba5-83c6-3eecf34b55e6.progressive.jpg?v=1626966614"
+        "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/001_1_90640a8d-84b4-4ba5-83c6-3eecf34b55e6.progressive.jpg?v=1626966614"
     },
     {
-        "id":10,
-        "category":"Auriculares",
+        "id": 10,
+        "category": "Auriculares",
         "name": "Auriculares Gamer Light",
-        "description":"¡Cada detalle importa! No dejes pasar ningún sonido y hazte con la victoria. Disfruta de todos los sonidos de tus juegos favoritos.",
-        "color":"Black",
+        "description": "¡Cada detalle importa! No dejes pasar ningún sonido y hazte con la victoria. Disfruta de todos los sonidos de tus juegos favoritos.",
+        "color": "Black",
         "price": 12990,
-        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/N500_INF_002.progressive.jpg?v=1621364441"
+        "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/N500_INF_002.progressive.jpg?v=1621364441"
     },
     {
-        "id":11,
-        "category":"Auriculares",
+        "id": 11,
+        "category": "Auriculares",
         "name": "Auriculares Gamer RGB Pro",
-        "description":"¡Cada detalle importa! No dejes pasar ningún sonido y hazte con la victoria. Cuenta con un control para silenciar el micrófono y controlar el volumen, además de unas luces RGB increíbles en ambos lados del auricular.",
-        "color":"Black",
+        "description": "¡Cada detalle importa! No dejes pasar ningún sonido y hazte con la victoria. Cuenta con un control para silenciar el micrófono y controlar el volumen, además de unas luces RGB increíbles en ambos lados del auricular.",
+        "color": "Black",
         "price": 16990,
-        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/N500_INF_001.progressive.jpg?v=1621364441"
+        "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/N500_INF_001.progressive.jpg?v=1621364441"
     }
-  
 ]
