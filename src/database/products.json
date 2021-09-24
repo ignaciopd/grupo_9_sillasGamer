@@ -1,0 +1,93 @@
+[
+    {
+        "id":1,
+        "category":"Sillas",
+        "name": "Silla Gamer Basic",
+        "description": "Despreocupate de tu comodidad a la hora de jugar. Nuestra silla gamer Basic cuenta con cueros de primera calidad, ademas de poseer una estructura de lo más resistente hecha de fibras de carbono y hierro",
+        "color":"Red",
+        "price": 29990,
+        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/007_ffba453d-602a-4a9f-97e1-96b2be683e14.progressive.jpg?v=1627565691"
+    },
+    {
+        "id":2,
+        "category":"Sillas",
+        "name": "Silla Gamer Newbie",
+        "description":"La silla Newbie es tu puerta de entrada al mundo gamer. Cuenta con materiales de primera calidad asegurando horas de juego con máxima comodidad",
+        "color":"Blue",
+        "price": 19990,
+        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/silla-donna-gamer-5029-foto6.progressive.jpg?v=1606855940"
+    },
+    {
+        "id":3,
+        "category":"Sillas",
+        "name": "Silla Gamer Space",
+        "description": "Siéntete como en el espacio con nuestra silla Space. Diseño exclusivo y patentado por Thronegame",
+        "color":"Yellow",
+        "price": 39990,
+        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/006_ef6e2cdd-3d6d-4413-98fa-96a1e12780a8.progressive.jpg?v=1605101523"
+    },
+    {
+        "id":4,
+        "category":"Sillas",
+        "name": "Silla Gamer Pro",
+        "description": "Sentirás que estas sentado en el auto deportivo más exclusivo del mundo. La silla gamer Pro tiene materiales usados en los mejores equipos de Formula 1",
+        "color":"White",
+        "price": 69990,
+        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/001_f30c5dcc-8afa-47ce-9e1b-9ccb2ced5e6f.progressive.jpg?v=1610294651"
+    },
+    {
+        "id":5,
+        "category":"Mouse",
+        "name": "Silla Gamer Pro",
+        "description":,
+        "color":"White",
+        "price": 69990,
+        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/001_f30c5dcc-8afa-47ce-9e1b-9ccb2ced5e6f.progressive.jpg?v=1610294651"
+    },
+    {
+        "id":6,
+        "category":"Mouse",
+        "name": "Silla Gamer Pro",
+        "description":,
+        "color":"White",
+        "price": 69990,
+        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/001_f30c5dcc-8afa-47ce-9e1b-9ccb2ced5e6f.progressive.jpg?v=1610294651"
+    },
+    {
+        "id":7,
+        "category":"Teclados",
+        "name": "Silla Gamer Pro",
+        "description":,
+        "color":"White",
+        "price": 69990,
+        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/001_f30c5dcc-8afa-47ce-9e1b-9ccb2ced5e6f.progressive.jpg?v=1610294651"
+    },
+    {
+        "id":8,
+        "category":"Teclados",
+        "name": "Silla Gamer Pro",
+        "description":,
+        "color":"White",
+        "price": 69990,
+        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/001_f30c5dcc-8afa-47ce-9e1b-9ccb2ced5e6f.progressive.jpg?v=1610294651"
+    },
+    {
+        "id":9,
+        "category":"Teclados",
+        "name": "Silla Gamer Pro",
+        "description":,
+        "color":"White",
+        "price": 69990,
+        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/001_f30c5dcc-8afa-47ce-9e1b-9ccb2ced5e6f.progressive.jpg?v=1610294651"
+    },
+    {
+        "id":10,
+        "category":"Auriculares",
+        "name": "Silla Gamer Pro",
+        "description":,
+        "color":"White",
+        "price": 69990,
+        "img":"https://cdn.shopify.com/s/files/1/0132/3555/2356/products/001_f30c5dcc-8afa-47ce-9e1b-9ccb2ced5e6f.progressive.jpg?v=1610294651"
+    }
+  
+]
