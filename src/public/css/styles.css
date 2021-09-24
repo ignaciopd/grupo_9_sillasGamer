@@ -283,30 +283,113 @@ footer h3{
 
  /* PAGINA DE PRODUCTO */ 
 
-.container-productTop{
+.product-image {
+    display:flex;
+    position: relative;
+    width: 90%;
+    padding-top: 20px;
+}
+
+.product-title {
     display: flex;
-    flex-wrap: wrap;
-    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
     text-align: center;
-    justify-content:space-around;
     align-items: center;
-    padding: 20px;
-    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.reviews {
-    color: darkorange;
-}
-.container-productDetail{
-    width: 50%;
+.product-price h2{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 20px;
+    font-weight: 800;
 }
 
-.container-productDetail h3{
-margin: 20px;
+.product-detail {
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    left: 35px;
+    color: #737f91;
+    margin-top: 20px ;
 }
-.product-images{
-    border: 1px solid black;
+
+.container-colors-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: relative;
+    left: 15px;
+    background-color: #F5F5F5;
+    border-radius: 4px;
 }
+
+.colors-btn {
+    position: relative;
+    left: 20px;
+    font-weight: 500;
+    font-size: 0.8em;
+    width: 80px;
+}
+
+.buy-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: 50px;
+    background-color: #9ae63e;
+    position: relative;
+    left: 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.buy-btn {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: transparent;
+    font-weight: 800;
+}
+
+.cart-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: 50px;
+    background-color: white;
+    border: solid 2px #8d91f7;
+    position: relative;
+    left: 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-btn {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: transparent;
+    font-weight: 800;
+}
+
+
+
+
+/* SEPARADOR */
 
 .buybutton {
     background-color: black;
@@ -736,11 +819,61 @@ form {
     
     .summary_card{
         width: 70vw;
-        margin: auto;
-        
+        margin: auto; 
+    }
+
+     /* PAGINA DE PRODUCTO */
+
+    .product-image {
+        width: 473px;
+        height: 473px;
+        position: relative;
+        left: 400px;
+    }
+
+    .product-title {
+        position: relative;
+        left: 200px;
+        bottom: 400px;
+        margin-top: 10px;
+    }
+
+    .product-price {
+        position: relative;
+        left: 920px;
+        bottom: 400px;
+    }
+
+    .product-detail {
+        width: 400px;
+        position: relative;
+        left: 950px;
+        bottom: 400px;
+        margin-top: 10px;
+    }
+    .container-colors-btn {
+        width: 473px;
+        position: relative;
+        left: 920px;
+        bottom: 400px;
+        margin-top: 10px;
+
+    }
+
+    .buy-btn-container {
+        width: 473px;
+        position: relative;
+        left: 920px;
+        bottom: 400px;
+        margin-top: 10px;
     }
     
-
+    .cart-btn-container {
+        width: 473px;
+        position: relative;
+        left: 920px;
+        bottom: 400px;
+    }
 }
 
 @media (min-width: 1200px) { 

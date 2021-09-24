@@ -1,41 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
 <%- include('./partials/head.ejs') %>
 
 <%- include('./partials/header.ejs') %>
 
 <body>
     
-    <div class="container-productTop">
-        <img class="product-images" src="./img/silla-home.png" alt="No se encontró la imágen"> 
-        <div class="container-productDetail">
-         <h1>THRONEGAME R1 RACE 2021</h1>
-         <span class="fa fa-star reviews"></span>
-         <span class="fa fa-star reviews"></span>
-         <span class="fa fa-star reviews"></span>
-         <span class="fa fa-star reviews"></span>
-         <span class="fa fa-star"></span>
-         <h3>La silla presenta un asiento ancho, respaldo alto y tonos de color personalizados en dos capas para ofrecerle el estilo, la comodidad y la resistencia que necesita para largas sesiones de juego.</h3>
-         <h2>$249.990</h2>
-         <div class="buybutton">
-             <h2>Agregar al carrito</h2>
+    <img class="product-image" src="./img/silla-home.png" alt="No se encontró la imágen">   
+    <div class="product-title">
+        <h2>
+            DARK SOFT SILLA GAMER 
+        </h2>
+    </div>
+    <div class="product-price">
+        <h2>
+            $69.999
+        </h2>
+    </div>
+    <div class="product-detail">
+        <p>
+            Despreocupate por las comodidad a la hora de jugar.
+            Nuestra silla gamer 'Dark soft' cuenta con cueros
+            de primera calidad, ademas de poseer una estructura
+            de lo mas resistente hecha de fibras de carbono y hierro.
+        </p>
+    </div>
+    <div class="container-colors-btn">
+        Seleccione un color 
+        <div>
+        <select class="colors-btn"
+        name="product-color-selector"> 
+            <option value="negro"> Negro </option>
+            <option value="blanco"> Blanco </option>
+            <option value="gris"> Gris </option>
+        </select>
         </div>
     </div>
+    <div class="buy-btn-container">
+        <button class="buy-btn">
+            Comprar
+        </button>
+    </div>
+    <div class="cart-btn-container">
+        <button class="cart-btn">
+            Agregar al carro
+        </button>
+    </div>
 
-    <div class="container-productBottom">
-        <div class="container-productDescription">
-        <h1>Especificaciones Técnicas</h1>
-        <ul>
-            <li>Adjustable Tilt Back: lean back, sit upright, or rock with built-in tilt tension lever underneath the seat</li>
-            <li>Pneumatic Seat-Height Adjustment: quick and easy adjustment regulated height of chair relative to the floor</li>
-            <li>360 Degree Swivel Functionality: for easy maneuvering</li>
-            <li>Shock-Absorbing Nylon Casters: allow for great stability and mobility</li>
-            <li>Shock-Absorbing Nylon Casters: allow for great stability and mobility</li>
-            <li>Armrest on Both Sides: relieves arm fatigue for hours of extended comfort</li>
-        </ul>
-    </div>
-    </div>
+
+
+
+    <%- include('./partials/footer.ejs') %>
 
 </body>
-
-<%- include('./partials/footer.ejs') %>
 
 </html>
