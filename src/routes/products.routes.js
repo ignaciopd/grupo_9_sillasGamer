@@ -4,6 +4,6 @@ const controller = require("../controller/productsController")
 
 router.get ('/', controller.indexProduct)
 
-router.get ('/productsDetails', controller.productsdetails)
+router.get ('/product-detail/:id', controller.products)
 
 module.exports = router

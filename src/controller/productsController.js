@@ -1,18 +1,22 @@
-const fs = require ('fs')
-const path = require("path");
-const productsFilePath = path.join(__dirname, "../database/products.json");
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf8'));
 
+const path = require("path");
+const db = require('../database/products.json')
 
 const controller = {
-  indexProduct: (req, res) => {
-    let allProducts = products; 
-    res.render("indexProduct.ejs", {allProducts});  
+  products: (req, res, next) => {
+    const id= req.params.id;
+    const details = db.find((item)=>item.id == id);
+    res.render("productDetail",{product:details})
+  },
+  shop: (req,res,next) => {
+    res.render('shop',{item:db})
   },
 
-  productsdetails: (req, res) => {
-    res.render("productDetail.ejs") 
+  indexProduct: (req, res, next) => {
+    const allProducts = db;
+    res.render("indexProduct", { product:allProducts})
   },
+    
 }
 
-module.exports = controller
+module.exports = controller;

@@ -7,12 +7,13 @@
     <%- include('./partials/head.ejs') %>
 
     <%- include('./partials/header.ejs') %>
+    <section class=product-section> 
+        <% product.forEach(function(producto){ %>
+            <%- include('partials/product', {producto}) %>
+        <% }); %>  
+    </section>  
     
-    <% allProducts.forEach(function(producto){ %>
-        <%- include('partials/product', {producto}) %>
-      <% }); %>
-
-    <%- include('./partials/footer.ejs') %>  
+    <%- include('./partials/footer.ejs') %> 
     
 </body>
 

@@ -7,50 +7,45 @@
 
 <body>
     
-    <img class="product-image" src="./img/silla-home.png" alt="No se encontró la imágen">   
-    <div class="product-title">
-        <h2>
-            DARK SOFT SILLA GAMER 
-        </h2>
-    </div>
-    <div class="product-price">
-        <h2>
-            $69.999
-        </h2>
-    </div>
-    <div class="product-detail">
-        <p>
-            Despreocupate por las comodidad a la hora de jugar.
-            Nuestra silla gamer 'Dark soft' cuenta con cueros
-            de primera calidad, ademas de poseer una estructura
-            de lo mas resistente hecha de fibras de carbono y hierro.
-        </p>
-    </div>
-    <div class="container-colors-btn">
-        Seleccione un color 
-        <div>
-        <select class="colors-btn"
-        name="product-color-selector"> 
-            <option value="negro"> Negro </option>
-            <option value="blanco"> Blanco </option>
-            <option value="gris"> Gris </option>
-        </select>
+    <article id=<%=product.id%>>
+        <img class="product-image" src=<%=product.img%>  alt="No se encontró la imágen">   
+        <div class="product-title">
+            <h2>
+                <%=product.name %> 
+            </h2>
         </div>
-    </div>
-    <div class="buy-btn-container">
-        <button class="buy-btn">
-            Comprar
-        </button>
-    </div>
-    <div class="cart-btn-container">
-        <button class="cart-btn">
-            Agregar al carro
-        </button>
-    </div>
-
-
-
-
+        <div class="product-price">
+            <h2>
+                $<%=product.price %> 
+            </h2>
+        </div>
+        <div class="product-detail">
+            <p>
+                <%=product.description %> 
+            </p>
+        </div>
+        <div class="container-colors-btn">
+            Seleccione un color 
+        <div>
+            <select class="colors-btn" name="product-color-selector"> 
+                    <option value="negro"> Negro </option>
+                    <option value="blanco"> Blanco </option>
+                    <option value="gris"> Gris </option>
+            </select>
+        </div>
+        </div>
+        <div class="buy-btn-container">
+            <button class="buy-btn">
+                Comprar
+            </button>
+        </div>
+        <div class="cart-btn-container">
+            <button class="cart-btn">
+                Agregar al carro
+            </button>
+        </div>
+    </article>
+    
     <%- include('./partials/footer.ejs') %>
 
 </body>

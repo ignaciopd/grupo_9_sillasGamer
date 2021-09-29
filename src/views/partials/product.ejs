@@ -1,12 +1,13 @@
 <article class=product-article> 
-    <img src=<%= producto.img %> alt="imagen de producto" >
+    <img src=<%=producto.img%> alt="imagen de producto" >
     <div class= "conteiner-datos"> 
-        <i class="fas fa-truck"></i>
-        <div class="conteiner-precios">
-            <h2 class= "product-name"><%= producto.name %></h2>
-            <p class ="precios"><%= producto.price %></p>
-            <p class ="color"><%= producto.color %></p>
-        </div>    
-        <p class ="descripciones"><%= user.description %></p>
-    </div>    
+        <div class="products-details">
+            <h2 class= "product-name"><%=producto.name %> </h2>
+            <p class ="precios">$<%=producto.price %> </p>
+            <p class ="color">Color: <%=producto.color %></p>
+        </div>
+        <div class="conteiner-button"> 
+            <a class="button-detail " href="#"> DETALLE </a>   
+        </div>  
+    </div>
 </article>
