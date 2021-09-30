@@ -1,6 +1,7 @@
 
 const path = require("path");
 const db = require('../database/products.json')
+const fs = require('fs');
 
 const controller = {
   products: (req, res, next) => {
@@ -16,6 +17,16 @@ const controller = {
     const allProducts = db;
     res.render("indexProduct", { product:allProducts})
   },
+
+  formCreateProduct: (req, res, next) => {
+    res.render("createProduct")
+  },
+
+  createProduct:(req, res, next) => {
+
+    res.render("createProduct")
+  },
+
     
 }
 

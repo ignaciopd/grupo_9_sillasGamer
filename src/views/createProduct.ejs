@@ -7,7 +7,7 @@
 <%- include('./partials/header.ejs') %>
 
 <body>
-    <form action="createProduct" method="GET" class="conteinerCreateProduct">
+    <form action="/create-product" method="POST" enctype="multipart/form-data" class="conteinerCreateProduct">
 
         <div class="conteiner-crear">
             <h3>Crear o Modificar?</h3>
@@ -19,11 +19,11 @@
         </div>
 
         <div class="conteiner-form"> 
-         <input type="text" name="name-product" placeholder="Nombre del Producto" class="input-form">
+         <input type="text" name="name" placeholder="Nombre del Producto" class="input-form">
         </div>
 
         <div class="conteiner-form"> 
-        <textarea name="description-product" placeholder="Descripcion de Producto" class="input-form"></textarea>
+        <textarea name="description" placeholder="Descripcion de Producto" class="input-form"></textarea>
         </div>    
 
         <div class="conteiner-form"> 
@@ -33,7 +33,7 @@
 
         <div class="conteiner-form"> 
             <label> Selecciona el tipo de Prodcuto</label>  
-            <select type="" name="category-product" class="input-form">
+            <select type="" name="category" class="input-form">
                 <option value="mouse">Mouse</option>
                 <option value="teclado">Teclado</option>
                 <option value="silla">Silla</option>
@@ -43,7 +43,7 @@
 
         <div class="conteiner-form"> 
             <label>Selecciona un color</label>  
-            <select name="color-product" class="input-form">
+            <select name="color" class="input-form">
                 <option value="blanco">Blanco</option> 
                 <option value="negro">Negro</option>
                 <option value="azul">Azul</option>
@@ -53,7 +53,7 @@
 
         <div class="conteiner-form"> 
             <label>Valor en Pesos</label>   
-            <input type="number" name="price-product" placeholder="$" class="input-form">
+            <input type="number" name="price" placeholder="$" class="input-form">
         </div>
 
         <div class="containers-form buttom-login">
