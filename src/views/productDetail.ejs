@@ -46,7 +46,7 @@
                 </button>
             </div>
             <div class="formularioEditar">
-                <form method="post" action="/<%=product.id %>?_method=PUT">
+                <form method="GET" action="/edit/<%=product.id %>?_method=PUT">
                     <input type="submit" value="Editar" name="editar" class="btnForm">
                 </form>
                 <form method="post" action="/<%=product.id %>?_method=DELETE">
