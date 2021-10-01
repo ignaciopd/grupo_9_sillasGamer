@@ -2,7 +2,6 @@ const path = require("path");
 const db = require('../database/products.json')
 const fs = require('fs')
 const { v4: uuidv4 } = require('uuid');
-uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
 
 
 const mainController = {
@@ -28,6 +27,11 @@ const mainController = {
         res.render("createProduct.ejs")
     },
 
+    indexProduct: (req, res, next) => {
+        const allProducts = db;
+        res.render("indexProduct", { product:allProducts})
+      },
+
     postcreat: (req,res) => {
         const archivo = req.file;
         const {name, description, category, color, price}= req.body;
@@ -44,8 +48,6 @@ const mainController = {
         db.push(producto);
         fs.writeFileSync(path.join(__dirname,'../database/products.json'), JSON.stringify(db,null, 4), {encoding: "utf8",});
         
-        
-        
         res.render("indexProduct", { product:allProducts})
     },
 
@@ -54,6 +56,32 @@ const mainController = {
         const details = db.find((item)=>item.id == id);
         res.render("productDetail",{product:details})
       },
+    
+    getEdit: (req, res, next) => {
+        const id= req.params.id;
+        const details = db.find((item)=>item.id == id);
+        res.render("editProduct",{product:details})
+      },  
+    
+    editProduct: (req, res, next) => {
+        const id= req.params.id;
+        const archivo= req.file;
+        const {name, description, category, color, price}= req.body;
+        const indexPrododuct = db.findIndex((item)=>item.id == id);
+        db[indexPrododuct] = {
+            id: id,
+            name: name,
+            description: description,
+            category: category,
+            color: color,
+            img: `img/${archivo.filename}`,
+            price:price
+        };
+        fs.writeFileSync(path.join(__dirname,'../database/products.json'), JSON.stringify(db,null, 4), {encoding: "utf8",});
+
+
+        res.render("productDetail",{product:details})
+    }
 
 }
 

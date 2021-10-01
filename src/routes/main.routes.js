@@ -15,6 +15,8 @@ router.get("/sign-in", mainController.signIn);
 
 router.get ('/create-product', mainController.createProduct)
 
+router.get ('/product', mainController.indexProduct)
+
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       cb(null, path.join(__dirname,'../public/img'))
@@ -30,6 +32,10 @@ const upload = multer({ storage: storage })
 router.post ('/create', upload.single("img-product"), mainController.postcreat)
 
 router.get ('/product-detail/:id', mainController.products)
-  
+
+router.get ('/edit/:id', mainController.getEdit)
+
+router.put ('/edit/:id', upload.single("img-product"), mainController.editProduct)
+
 
 module.exports = router

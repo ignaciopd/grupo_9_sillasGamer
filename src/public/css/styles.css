@@ -333,7 +333,10 @@ footer h3{
 
 
  /* PAGINA DE DETALLE DE PRODUCTO */ 
-
+.conteiner-product-detail{
+    display: flex;
+    
+}
 .product-image {
     display:flex;
     position: relative;
@@ -875,60 +878,59 @@ form {
 
      /* PAGINA DE PRODUCTO */
 
+    .conteiner-product-detail{
+        display: flex;
+        width: 70%;
+        max-width:90%;
+        margin: 100px auto;
+
+    } 
     .product-image {
         width: 473px;
         height: 473px;
-        position: relative;
-        left: 400px;
     }
 
     .product-title {
-        position: relative;
-        left: 200px;
-        bottom: 400px;
-        margin-top: 10px;
+        justify-content: left;
     }
 
-    .product-price {
-        position: relative;
-        left: 920px;
-        bottom: 400px;
+    .product-price h2 {
+        left: 0
+    }
+
+    .product-detail { 
+        left: 0
     }
 
     .product-detail {
-        width: 400px;
-        position: relative;
-        left: 950px;
-        bottom: 400px;
         margin-top: 10px;
+        width:100%;
     }
+
+    .product-detail p{
+        text-align: left;
+    }
+
     .container-colors-btn {
-        width: 473px;
-        position: relative;
-        left: 920px;
-        bottom: 400px;
+        left:0;
+        width:100%;
         margin-top: 10px;
 
     }
 
     .buy-btn-container {
-        width: 473px;
-        position: relative;
-        left: 920px;
-        bottom: 400px;
+        left:0;
+        width:100%;
         margin-top: 10px;
     }
     
+    
     .cart-btn-container {
-        width: 473px;
-        position: relative;
-        left: 920px;
-        bottom: 400px;
+        left:0;
+        width:100%;
     }
 
     .product-section{
-        flex-direction: row;
-        flex-wrap: wrap;
     }
 
     .product-article{
@@ -938,6 +940,21 @@ form {
     .product-name{
         font-size: 13px;
     }
+
+    .formularioEditar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .btnForm {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        width: 237px;
+        background-color: #000000;
+        color: white;
+        padding: 15px
+        
+    }
+
 }
 
 @media (min-width: 1200px) { 

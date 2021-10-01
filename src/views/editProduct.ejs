@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<%- include('./partials/head.ejs') %>
+
+<%- include('./partials/header.ejs') %>
+
+<body>
+    <form action="/create" method="POST" enctype="multipart/form-data" class="conteinerCreateProduct">
+        <input type="hidden" name="id">
+
+        <div class="conteiner-form"> 
+         <input type="text" name="name" class="input-form" value="<%=producto.name %>">
+        </div>
+
+        <div class="conteiner-form"> 
+        <textarea name="description" placeholder="Descripcion de Producto" class="input-form" value="<%=producto.description %>"></textarea>
+        </div>    
+
+        <div class="conteiner-form"> 
+        <label> Selecciona un imagen </label>  
+        <input type="file" accept=".jpg,.png" name="img-product" Class="file-img">
+        </div> 
+
+        <div class="conteiner-form"> 
+            <label> Selecciona el tipo de Prodcuto</label>  
+            <select type="" name="category" class="input-form" value="<%=producto.category %>"> 
+                <option value="mouse">Mouse</option>
+                <option value="teclado">Teclado</option>
+                <option value="silla">Silla</option>
+                <option value="auriculares">Auricular</option>
+            </select>
+        </div>
+
+        <div class="conteiner-form"> 
+            <label>Selecciona un color</label>  
+            <select name="color" class="input-form" value="<%=producto.color %>">
+                <option value="blanco">Blanco</option> 
+                <option value="negro">Negro</option>
+                <option value="azul">Azul</option>
+                <option value="rojo">Rojo</option>
+            </select>
+        </div>
+
+        <div class="conteiner-form"> 
+            <label>Valor en Pesos</label>   
+            <input type="number" name="price" placeholder="$" class="input-form" value="<%=producto.price %>">
+        </div>
+
+        <div class="containers-form buttom-login">
+            <button type="submit" id="enviar"> Crear</button>
+        </div>
+    </form>
+
+<%- include('./partials/footer.ejs') %>
+
+</body>
+
+
+
+</html>

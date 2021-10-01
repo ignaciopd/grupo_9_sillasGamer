@@ -7,43 +7,53 @@
 
 <body>
     
-    <article id=<%=product.id%>>
+    <article class="conteiner-product-detail" id=<%=product.id%>>
         <img class="product-image" src=<%=product.img%>  alt="No se encontró la imágen">   
-        <div class="product-title">
-            <h2>
-                <%=product.name %> 
-            </h2>
-        </div>
-        <div class="product-price">
-            <h2>
-                $<%=product.price %> 
-            </h2>
-        </div>
-        <div class="product-detail">
-            <p>
-                <%=product.description %> 
-            </p>
-        </div>
-        <div class="container-colors-btn">
-            Seleccione un color 
-        <div>
-            <select class="colors-btn" name="product-color-selector"> 
-                    <option value="negro"> Negro </option>
-                    <option value="blanco"> Blanco </option>
-                    <option value="gris"> Gris </option>
-            </select>
-        </div>
-        </div>
-        <div class="buy-btn-container">
-            <button class="buy-btn">
-                Comprar
-            </button>
-        </div>
-        <div class="cart-btn-container">
-            <button class="cart-btn">
-                Agregar al carro
-            </button>
-        </div>
+        <div class="conteneiner-detail">
+            <div class="product-title">
+                <h2>
+                    <%=product.name %> 
+                </h2>
+            </div>
+            <div class="product-price">
+                <h2>
+                    $<%=product.price %> 
+                </h2>
+            </div>
+            <div class="product-detail">
+                <p>
+                    <%=product.description %> 
+                </p>
+            </div>
+            <div class="container-colors-btn">
+                Seleccione un color 
+            <div>
+                <select class="colors-btn" name="product-color-selector"> 
+                        <option value="negro"> Negro </option>
+                        <option value="blanco"> Blanco </option>
+                        <option value="gris"> Gris </option>
+                </select>
+            </div>
+            </div>
+            <div class="buy-btn-container">
+                <button class="buy-btn">
+                    Comprar
+                </button>
+            </div>
+            <div class="cart-btn-container">
+                <button class="cart-btn">
+                    Agregar al carro
+                </button>
+            </div>
+            <div class="formularioEditar">
+                <form method="post" action="/<%=product.id %>?_method=PUT">
+                    <input type="submit" value="Editar" name="editar" class="btnForm">
+                </form>
+                <form method="post" action="/<%=product.id %>?_method=DELETE">
+                    <input type="submit" value="Eliminar" name="eliminar" class="btnForm">
+                </form>
+            </div>
+        </div>    
     </article>
     
     <%- include('./partials/footer.ejs') %>

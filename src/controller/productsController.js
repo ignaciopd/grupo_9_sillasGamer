@@ -9,10 +9,7 @@ const productcontroller = {
     res.render('shop',{item:db})
   },
 
-  indexProduct: (req, res, next) => {
-    const allProducts = db;
-    res.render("indexProduct", { product:allProducts})
-  },
+
     
 }
 

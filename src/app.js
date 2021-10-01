@@ -2,10 +2,11 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const rutas = require("./routes/index.routes")
-
+const methodOverride = require('method-override')
 
 app.use (express.urlencoded ({extended: false})); 
 app.use (express.json())
+app.use(methodOverride('X-HTTP-Method-Override'))
 
 app.use(express.static(path.join(__dirname, './public')));
 
