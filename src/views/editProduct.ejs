@@ -7,7 +7,7 @@
 <%- include('./partials/header.ejs') %>
 
 <body>
-    <form action="/create" method="POST" enctype="multipart/form-data" class="conteinerCreateProduct">
+    <form action="/edit/<%=product.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="conteinerCreateProduct">
         <input type="hidden" name="id">
 
         <div class="conteiner-form"> 

@@ -31,7 +31,7 @@ const upload = multer({ storage: storage })
 
 router.post ('/create', upload.single("img-product"), mainController.postcreat)
 
-router.get ('/product-detail/:id', mainController.products)
+router.get ('/product/:id', mainController.products)
 
 router.get ('/edit/:id', mainController.getEdit)
 
