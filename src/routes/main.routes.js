@@ -37,5 +37,7 @@ router.get ('/edit/:id', mainController.getEdit)
 
 router.put ('/edit/:id', upload.single("img-product"), mainController.editProduct)
 
+router.delete ('/delete/:id', mainController.deleteProduct)
+
 
 module.exports = router

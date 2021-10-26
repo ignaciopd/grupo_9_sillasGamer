@@ -7,8 +7,8 @@
 
 <body>
     
-    <article class="conteiner-product-detail" id=<%=product.id%>>
-        <img class="product-image" src=<%=product.img%>  alt="No se encontró la imágen">   
+    <article class="conteiner-product-detail" id=<%= product.id %>>
+        <img class="product-image" src=<%=product.img %>>   
         <div class="conteneiner-detail">
             <div class="product-title">
                 <h2>
@@ -49,7 +49,7 @@
                 <form method="GET" action="/edit/<%=product.id %>?_method=PUT">
                     <input type="submit" value="Editar" name="editar" class="btnForm">
                 </form>
-                <form method="POST" action="/<%=product.id %>?_method=DELETE">
+                <form method="POST" action="/delete/<%=product.id %>?_method=DELETE">
                     <input type="submit" value="Eliminar" name="eliminar" class="btnForm">
                 </form>
             </div>

@@ -67,8 +67,8 @@ const mainController = {
         const id= req.params.id;
         const archivo= req.file;
         const {name, description, category, color, price}= req.body;
-        const indexPrododuct = db.findIndex((item)=>item.id == id);
-        db[indexPrododuct] = {
+        const indexProduct = db.findIndex((item)=>item.id == id);
+        db[indexProduct] = {
             id: id,
             name: name,
             description: description,
@@ -77,10 +77,13 @@ const mainController = {
             img: `img/${archivo.filename}`,
             price:price
         };
-        fs.writeFileSync(path.join(__dirname,'../database/products.json'), JSON.stringify(db,null, 4), {encoding: "utf8",});
-
-
-        res.render("productDetail",{product:details})
+        fs.writeFileSync(path.join(__dirname,'../database/products.json'),JSON.stringify(db,null, 4), {encoding: "utf8",});
+        res.render("productDetail",{product:details});
+      },
+    deleteProduct: (req,res,next) => {
+        const id = req.params.id;
+        db = db.filter((item) => item.id != id);
+        fs.writeFileSync(path.join(__dirname,'../database/products.json'),JSON.stringify(db, null, 4), {encoding: "utf8",});
     }
 
 }

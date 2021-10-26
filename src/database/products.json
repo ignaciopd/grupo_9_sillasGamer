@@ -97,22 +97,5 @@
         "color": "Black",
         "price": 16990,
         "img": "https://cdn.shopify.com/s/files/1/0132/3555/2356/products/N500_INF_001.progressive.jpg?v=1621364441"
-    },
-    {
-        "id": 1,
-        "name": "producto nuevo",
-        "description": "asda",
-        "category": "mouse",
-        "color": "blanco",
-        "img": "img/img-product-1633056235307-8564945039a8e6eb1ac139e32c83d067f81be0f14.jpg"
-    },
-    {
-        "id": 1,
-        "name": "sdad",
-        "description": "dsada",
-        "category": "mouse",
-        "color": "blanco",
-        "img": "img/img-product-1633056365164-5606840300afdc54b1aa086519d31f9e4172439ff.jpg",
-        "price": "123131"
     }
 ]
