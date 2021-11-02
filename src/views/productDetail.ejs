@@ -46,10 +46,10 @@
                 </button>
             </div>
             <div class="formularioEditar">
-                <form method="GET" action="/edit/<%=product.id %>?_method=PUT">
+                <form method="GET" action="/product/edit/<%=product.id %>?_method=PUT">
                     <input type="submit" value="Editar" name="editar" class="btnForm">
                 </form>
-                <form method="POST" action="/delete/<%=product.id %>?_method=DELETE">
+                <form method="POST" action="/product/delete/<%=product.id %>?_method=DELETE">
                     <input type="submit" value="Eliminar" name="eliminar" class="btnForm">
                 </form>
             </div>

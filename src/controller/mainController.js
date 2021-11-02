@@ -16,22 +16,25 @@ const mainController = {
     joinUs: (req, res) => {
         res.render("register.ejs");
     },
-
     signIn: (req, res) => {
         res.render("login.ejs");
-    },
-    products: (req, res) => {
-        res.render("productDetail.ejs");
     },
     createProduct: (req,res) => {
         res.render("createProduct.ejs")
     },
-
+    aboutUs: (req,res) => {
+        res.render("aboutUs.ejs")
+    },
+    preguntasFrecuentes: (req,res) => {
+        res.render("preguntasFrecuentes.ejs")
+    },
+    contact: (req,res) => {
+        res.render("contact.ejs")
+    },
     indexProduct: (req, res, next) => {
         const allProducts = db;
         res.render("indexProduct", { product:allProducts})
-      },
-
+    },
     postcreat: (req,res) => {
         const archivo = req.file;
         const {name, description, category, color, price}= req.body;
@@ -64,7 +67,7 @@ const mainController = {
       },  
     
     editProduct: (req, res, next) => {
-        const id= req.params.id;
+        let id= req.params.id;
         const archivo= req.file;
         const {name, description, category, color, price}= req.body;
         const indexProduct = db.findIndex((item)=>item.id == id);
@@ -80,12 +83,16 @@ const mainController = {
         fs.writeFileSync(path.join(__dirname,'../database/products.json'),JSON.stringify(db,null, 4), {encoding: "utf8",});
         res.render("productDetail",{product:details});
       },
-    deleteProduct: (req,res,next) => {
-        const id = req.params.id;
-        db = db.filter((item) => item.id != id);
-        fs.writeFileSync(path.join(__dirname,'../database/products.json'),JSON.stringify(db, null, 4), {encoding: "utf8",});
+    deleteProduct: (req, res, next) => {
+        let idDelete = req.params.id;
+        const newdb = model.filter((item) => item.id != idDelete);
+        fs.writeFileSync(
+            path.join(__dirname, '../database/products.json'),
+            JSON.stringify(newdb, null, 4),
+            { encoding: "utf-8", }
+        );
+        res.redirect('/');
     }
-
 }
 
-module.exports = mainController
+module.exports = mainController;
